@@ -1,0 +1,40 @@
+{
+  "reminders": [
+    "@NextJS: Use Next.js 15+ conventions only - avoid older patterns",
+    "@NextJS: Use App Router (`app` directory) instead of Pages Router (`pages` directory)",
+    "@NextJS: Leverage React Server Components by default (no 'use client' unless needed)",
+    "@NextJS: Use built-in SEO support with Metadata API instead of Head component",
+    "@NextJS: Use new Data Fetching patterns with async components",
+    "@NextJS: Use the new Link component without requiring <a> tags",
+    "@NextJS: Use route handlers (.ts) instead of API routes",
+    "@NextJS: Follow the new file conventions (layout.tsx, page.tsx, loading.tsx, error.tsx)",
+    "@NextJS: Use the new Image component with required width/height or 'fill'",
+    "@NextJS: Keep static assets in the app directory for metadata files",
+    "@NextJS: Use Server Actions for form submissions and mutations",
+    "@NextJS: Leverage Partial Prerendering when beneficial",
+    "@NextJS: Use the new next/og for Open Graph images"
+  ],
+  "framework": {
+    "name": "next",
+    "version": "15.0.0",
+    "router": "app",
+    "styling": "tailwind",
+    "preferences": {
+      "serverComponents": "preferred",
+      "dataFetching": "server-side"
+    }
+  },
+  "serverActions": {
+    "enabled": true,
+    "preference": "server-actions-over-api-routes"
+  },
+  "style": {
+    "format": "prettier",
+    "lint": "eslint",
+    "conventions": [
+      "named-exports",
+      "functional-components",
+      "css-modules"
+    ]
+  }
+}
